@@ -1,5 +1,5 @@
-# Min2
-Test Automation Engineer Scenario - Edoardo Ascenzi
+# Min2 - Test Automation Engineer Scenario
+Developed by Edoardo Ascenzi
 
 ## UML Class Diagram
 ![alt text](https://github.com/edoardoascenzi/Min2/blob/fce0189d4da82919e7554ee48861bab6f775ef75/doc/UML%20Class%20Diagram.png)
