@@ -46,9 +46,7 @@ class Vehicle:
         sensor = sensor.lower()
         if not sensor in DB.dfVehicle.sensorAllowed[self.name]:
             raise RuntimeError(f"[Vehicle] {sensor} is not compatible with {self.name} vehicle line")
-        from Sensor import Sensor
         self.sensors.append(Sensor(sensor))
-        from VehicleFunction import VehicleFunction
         self.VFs.append(VehicleFunction(DB.dictSensor_VehicleFunction[sensor]))
         
     def removeSensor(self,sensor:str):
@@ -57,7 +55,7 @@ class Vehicle:
             raise RuntimeWarning(f"[Vehicle] {sensor} sensor is not present in current vehicle configuration")
         sensorToRemove = self.sensors[sensorNameList.index(sensor)]
         self.sensors.remove(sensorToRemove)
-        self.removeVehicleFunction(sensorToRemove.getVF().name)
+        self.removeVehicleFunction(sensorToRemove.getVehicleFunction().name)
         print(f"Sensor {sensor} removed Correctly")
         
     def removeVehicleFunction(self,VF:str):
@@ -69,7 +67,6 @@ class Vehicle:
         
         
     def addVehicleFunction(self,VF:str):
-        from VehicleFunction import VehicleFunction
         self.VFs.append(VehicleFunction(VF))
      
     def getSensor(self):
@@ -110,7 +107,7 @@ class Sensor:
     def __str__(self):
         return self.name
     
-    def getVF(self):
+    def getVehicleFunction(self):
         return self.VF
     
     def getCapabilities(self):
