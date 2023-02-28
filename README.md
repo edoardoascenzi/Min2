@@ -2,7 +2,7 @@
 Developed by Edoardo Ascenzi
 
 ## UML Class Diagram
-![alt text](https://github.com/edoardoascenzi/Min2/blob/fce0189d4da82919e7554ee48861bab6f775ef75/doc/UML%20Class%20Diagram.png)
+![alt text](https://github.com/edoardoascenzi/Min2/blob/0dd0f5d4c708aff739572f53e0d70068ba439cc5/doc/UML%20Class%20Diagram.png)
 
 ## Solution Description
 In order to meet Oscar’s requirement we can create three classes: Vehicle, Sensor and VehicleFunction.
