@@ -2,7 +2,7 @@
 Test Automation Engineer Scenario - Edoardo Ascenzi
 
 ## UML Class Diagram
-![alt text](https://github.com/edoardoascenzi/Min2/blob/f0986dfd0ddb5e1321da9ba9b2b420459babcc1a/doc/UML%20Class%20Diagram.png)
+![alt text](https://github.com/edoardoascenzi/Min2/blob/fce0189d4da82919e7554ee48861bab6f775ef75/doc/UML%20Class%20Diagram.png)
 
 ## Solution Description
 In order to meet Oscar’s requirement we can create three classes: Vehicle, Sensor and VehicleFunction.
